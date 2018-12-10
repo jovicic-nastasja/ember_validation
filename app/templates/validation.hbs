@@ -1,0 +1,23 @@
+<div class="form-control">
+  {{#validated-form
+    class = 'form-horizontal'
+    model = (changeset model.user UserValidations)
+    on-submit = (perform submit)
+    as |f|}}
+
+    {{f.input label='First name' name='firstName' required=true}}
+    {{f.input label='Last name' name='lastName'  required=true}}
+
+     {{f.input
+       type         = 'select'
+       label        = 'Food'
+       name         = 'food'
+       includeBlank = 'Select food'
+       options      = foods
+       value        = model.food
+       required     = false
+     }}
+
+    {{f.submit label='Save'}}
+  {{/validated-form}}
+</div>
