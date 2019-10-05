@@ -1,8 +1,8 @@
-## Application details
+## Aplication details
 
-Application was created with EmberJS.
+Aplication was created with EmberJS.
 
-### Application functions
+### Aplication functions
 
-The application handles simple form validation.
+The aplication handles simple form validation.
 Note: just testing out libraries for validation. 
